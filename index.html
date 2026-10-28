@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#203f36">
+<meta name="description" content="TemuLaku mempertemukan harapan dengan kesempatan. Cari pekerjaan atau temukan pekerja untuk usahamu.">
+<title>TemuLaku — Mempertemukan Harapan dengan Kesempatan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topline"><span>✳</span> Setiap orang punya potensi. Setiap kesempatan berarti.</div>
+<header class="header">
+  <a class="brand" href="#beranda" aria-label="TemuLaku beranda"><span class="brand-symbol">↗</span><span class="brand-word">temu<span>laku</span><small>MEMPERTEMUKAN HARAPAN DENGAN KESEMPATAN</small></span></a>
+  <nav><a href="#cari-kerja">Cari kerja</a><a href="#pasang-lowongan">Pasang lowongan</a><a href="#tentang">Tentang kami</a></nav>
+  <a class="header-cta" href="#mulai">Mulai sekarang ↘</a>
+</header>
+
+<main id="beranda">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><i></i> PELUANG YANG LEBIH DEKAT</div>
+    <h1>Setiap harapan layak menemukan <em>kesempatan.</em></h1>
+    <p>TemuLaku mempertemukan orang yang siap bekerja dengan usaha yang membutuhkan bantuan. Dari UMKM hingga perusahaan, semua berawal dari sebuah pertemuan.</p>
+    <div class="hero-buttons"><a class="btn primary" href="#cari-kerja">Saya mencari kerja <b>→</b></a><a class="btn outline" href="#pasang-lowongan">Saya mencari pekerja <b>↗</b></a></div>
+    <div class="hero-foot"><span>♡</span> Kesempatan yang baik bisa menjadi awal perubahan.</div>
+  </div>
+  <div class="hero-visual" aria-label="Ilustrasi matahari terbit dan dua jalan yang bertemu">
+    <div class="sun"></div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="road"></div>
+    <div class="person p1"><i></i></div><div class="person p2"><i></i></div>
+    <div class="float-card fc1"><span class="card-icon">✳</span><span><b>Kesempatan baru</b><small>Bisa dimulai hari ini</small></span></div>
+    <div class="float-card fc2"><span class="card-icon green">✓</span><span><b>Temu yang berarti</b><small>Kemampuan bertemu kebutuhan</small></span></div>
+    <div class="visual-caption">BERGERAK BERSAMA · TUMBUH BERSAMA</div>
+  </div>
+</section>
+
+<section class="values" id="mulai">
+  <div><span>01</span><article><b>Kenali potensimu</b><p>Mulai dari kemampuan dan minatmu.</p></article></div>
+  <div><span>02</span><article><b>Temukan kecocokan</b><p>Lihat peluang dari berbagai jenis usaha.</p></article></div>
+  <div><span>03</span><article><b>Mulai melangkah</b><p>Hubungi pemberi kerja dan lanjutkan prosesnya.</p></article></div>
+</section>
+
+<section class="section seeker" id="cari-kerja">
+  <div class="section-title">
+    <div><div class="eyebrow">UNTUK PENCARI KERJA</div><h2>Temukan langkah<br><em>berikutnya.</em></h2></div>
+    <p>Isi profil singkat dan cari peluang berdasarkan bidang serta lokasi. Tidak perlu punya pengalaman panjang untuk mulai mencari.</p>
+  </div>
+  <div class="two-col">
+    <form id="seeker-form" class="panel">
+      <div class="panel-heading"><span class="round-icon">↗</span><div><h3>Ceritakan tentang dirimu</h3><p>Informasi dasar pencari kerja</p></div></div>
+      <label>Nama panggilan<input id="seeker-name" maxlength="60" placeholder="Contoh: Rina" required></label>
+      <div class="form-row">
+        <label>Pendidikan terakhir<select id="education" required><option value="">Pilih pendidikan</option><option value="SD">SD / sederajat</option><option value="SMP">SMP / sederajat</option><option value="SMA/SMK">SMA / SMK</option><option value="D3">Diploma (D3)</option><option value="S1">Sarjana (S1)</option><option value="S2+">S2 atau lebih</option><option value="Nonformal">Pelatihan / nonformal</option></select></label>
+        <label>Usia<input id="age" type="number" min="15" max="100" placeholder="Contoh: 24" required></label>
+      </div>
+      <label>Bidang yang diminati<select id="field"><option value="">Semua bidang</option><option>Administrasi</option><option>Penjualan & pelayanan</option><option>Produksi & gudang</option><option>Makanan & minuman</option><option>Teknologi & kreatif</option><option>Pengemudi & logistik</option><option>Jasa & pekerjaan umum</option></select></label>
+      <label>Kota atau area<input id="seeker-location" placeholder="Contoh: Bandung, Jakarta Selatan"></label>
+      <button class="btn primary full" type="submit">Cari peluang yang cocok <b>→</b></button>
+      <p class="small-note">Privasi demo: profil tidak dikirim ke server. Jangan masukkan informasi sensitif.</p>
+    </form>
+    <div class="results">
+      <div class="results-head"><div><div class="eyebrow">PELUANG TERSEDIA</div><h3 id="results-title">Satu kesempatan bisa mengubah banyak hal.</h3></div><span class="count" id="job-count">6 lowongan</span></div>
+      <div id="job-list" class="job-list"></div>
+      <div class="safety-note"><b>ⓘ Utamakan keamanan.</b> Periksa pemberi kerja dan detail pekerjaan. TemuLaku tidak meminta biaya untuk melamar pekerjaan.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section employer" id="pasang-lowongan">
+  <div class="employer-intro">
+    <div class="eyebrow light">UNTUK USAHA & PEMBERI KERJA</div>
+    <h2>Usahamu butuh bantuan.<br><em>Temukan orangnya.</em></h2>
+    <p>Dari warung di sudut jalan sampai perusahaan yang terus tumbuh, TemuLaku membantu mempertemukan kebutuhan usaha dengan orang yang siap berkontribusi.</p>
+    <ul><li>✓ Untuk UMKM, perusahaan, toko, dan perorangan</li><li>✓ Informasi lowongan sederhana dan jelas</li><li>✓ Lowongan yang kamu tambahkan muncul di daftar pada perangkat ini</li></ul>
+  </div>
+  <form id="employer-form" class="employer-panel">
+    <div class="panel-heading"><span class="round-icon gold">✳</span><div><h3>Pasang lowongan kerja</h3><p>Lengkapi informasi pekerjaan dengan jelas.</p></div></div>
+    <label>Nama usaha / pemberi kerja<input id="employer-name" maxlength="80" placeholder="Contoh: Kedai Kopi Pagi" required></label>
+    <label>Nama posisi<input id="position" maxlength="80" placeholder="Contoh: Barista / penjaga toko" required></label>
+    <div class="form-row">
+      <label>Jenis pemberi kerja<select id="employer-type" required><option value="">Pilih jenis</option><option>Perusahaan</option><option>UMKM / usaha lokal</option><option>Toko / restoran</option><option>Perorangan</option><option>Organisasi / komunitas</option></select></label>
+      <label>Bidang pekerjaan<select id="employer-field" required><option>Administrasi</option><option>Penjualan & pelayanan</option><option>Produksi & gudang</option><option>Makanan & minuman</option><option>Teknologi & kreatif</option><option>Pengemudi & logistik</option><option>Jasa & pekerjaan umum</option></select></label>
+    </div>
+    <div class="form-row">
+      <label>Lokasi pekerjaan<input id="employer-location" maxlength="100" placeholder="Kota / kecamatan" required></label>
+      <label>Gaji / upah (opsional)<input id="pay" maxlength="60" placeholder="Contoh: Rp3 juta/bulan"></label>
+    </div>
+    <label>Pendidikan minimum<select id="minimum-education"><option value="Tidak ada syarat khusus">Tidak ada syarat khusus</option><option value="SD">SD / sederajat</option><option value="SMP">SMP / sederajat</option><option value="SMA/SMK">SMA / SMK</option><option value="D3">D3</option><option value="S1">S1</option><option value="S2+">S2 atau lebih</option></select></label>
+    <label>Deskripsi dan persyaratan<textarea id="description" rows="3" maxlength="600" placeholder="Tugas, jam kerja, persyaratan, dan informasi penting lainnya" required></textarea></label>
+    <label>Kontak untuk pelamar<input id="contact" maxlength="100" placeholder="Email atau nomor WhatsApp bisnis" required></label>
+    <button class="btn cream-btn full" type="submit">Terbitkan di perangkat ini <b>→</b></button>
+    <p class="small-note">Versi prototipe menyimpan lowongan di browser ini saja. Belum tampil di perangkat pengguna lain.</p>
+  </form>
+</section>
+
+<section class="section own-section" id="lowongan-saya" hidden>
+  <div class="section-title"><div><div class="eyebrow">LOWONGAN YANG DITAMBAHKAN</div><h2>Kesempatan baru<br><em>dari komunitasmu.</em></h2></div><p>Lowongan yang kamu tambahkan dari perangkat ini akan muncul di bagian ini dan daftar pencarian.</p></div>
+  <div id="own-list" class="own-list"></div>
+</section>
+
+<section class="manifesto" id="tentang">
+  <div class="manifesto-mark">✳</div><div class="eyebrow">FILOSOFI TEMULAKU</div>
+  <h2>Di balik setiap lamaran,<br>ada seseorang yang sedang <em>berjuang.</em></h2>
+  <p>Kami percaya kesempatan seharusnya lebih mudah ditemukan. Ketika orang dan pekerjaan saling bertemu, masa depan bisa mulai berubah.</p>
+  <strong>TemuLaku</strong><span>Mempertemukan Harapan dengan Kesempatan</span>
+</section>
+</main>
+
+<footer class="footer">
+  <a class="brand" href="#beranda"><span class="brand-symbol">↗</span><span class="brand-word">temu<span>laku</span><small>MEMPERTEMUKAN HARAPAN DENGAN KESEMPATAN</small></span></a>
+  <p>Langkah kecil menuju kesempatan yang lebih luas.</p>
+  <small>© 2026 TemuLaku · Prototipe awal</small>
+</footer>
+
+<dialog id="job-dialog" class="dialog">
+  <button class="close-dialog" id="close-dialog" aria-label="Tutup">×</button>
+  <div class="eyebrow">DETAIL LOWONGAN</div><h3 id="dialog-title">Posisi pekerjaan</h3><p class="dialog-company" id="dialog-company"></p>
+  <div class="dialog-meta" id="dialog-meta"></div><p id="dialog-description"></p>
+  <div class="contact-box" id="dialog-contact"></div>
+  <p class="dialog-warning">Pastikan informasi dan identitas pemberi kerja benar. Jangan mengirim uang untuk mendapatkan pekerjaan.</p>
+  <button class="btn primary full" id="dialog-done">Tutup detail</button>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
